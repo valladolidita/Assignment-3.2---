@@ -13,6 +13,7 @@
 				<ul>
 					<li>Home</li>
 					<li>WordPress</li>
+					<li>Assignment 3.2</li>
 				</ul>
 			</nav>
 		</header>
