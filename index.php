@@ -4,7 +4,7 @@
 	<script src="http://use.edgefonts.net/josefin-slab.js"></script>
 	<script src="http://use.edgefonts.net/merriweather.js"></script>
 	<title><?php bloginfo('name'); ?></title>
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>"/>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css"/>
 </head>
 	<body>
 		<header>
@@ -18,7 +18,7 @@
 			</nav>
 		</header>
 		<section>
-			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/espresso.jpg"/>
+			<img src="<?php echo get_template_directory_uri(); ?>/images/espresso.jpg"/>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<section>
 				<a href="<?php the_permalink(); ?>"><h1><?php the_title_attribute(); ?></h1></a>
