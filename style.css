@@ -46,6 +46,17 @@ body {
 	margin-right:auto;
 }
 
+.main {
+	width: 80%;
+	float: left;
+	padding-right: 2em;
+}
+
+.side {
+	width: 20%;
+	float: left;
+}
+
 section > section {
 	width: 60%;
 	max-width: 27.8125em;
@@ -75,4 +86,19 @@ footer h1 {
 
 footer p {
 	line-height: .5;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
 }
